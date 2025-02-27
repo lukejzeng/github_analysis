@@ -1,0 +1,15 @@
+code_writer_task:
+  description: >
+    Write code for {topic}
+    Make sure you write code that is clear and concise.
+  expected_output: >
+    A code file with the code for {topic}
+  agent: code_writer
+
+test_writer_task:
+  description: >
+    Write unit tests for {topic}
+    Make sure you write unit tests that are clear and concise based on the code provided
+  expected_output: >
+    A code file with the unit tests for {topic}
+  agent: test_writer
